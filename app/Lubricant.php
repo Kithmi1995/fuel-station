@@ -8,7 +8,7 @@ class Lubricant extends Model
 {
     protected $guarded = ['id'];
 
-    //protected $table = 'lubricants';
+    protected $table = 'lubricants';
 
     public function user(){
         return $this->belongsTo('App\User');

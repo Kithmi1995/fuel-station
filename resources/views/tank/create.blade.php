@@ -20,13 +20,13 @@
                                 @csrf
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="tank_name">Tank Name</label><br>
-                                    <input class="form-control" type="text" id="tank_name" name="tank_name" placeholder="Enter Lubricant Type.."><br>
+                                    <input class="form-control" type="text" id="tank_name" name="tank_name" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="fuel_id">Fuel ID</label><br>
                                     <select name="fuel_id" id="fuel_id" class="mdb-select">
                                         <option value="" disabled selected>Choose your option</option>
@@ -39,9 +39,9 @@
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="capacity">Capacity</label><br>
-                                    <input class="form-control" type="text" id="capacity" name="capacity" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="capacity" name="capacity"><br>
 
                                 </div>
 

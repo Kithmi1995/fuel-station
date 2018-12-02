@@ -20,41 +20,41 @@
                                 @csrf
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="date">Date</label><br>
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="Enter Unit Price.."><br>
+                                    <input class="form-control" type="date" id="date" name="date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="lub_id">Lubricant ID</label><br>
-                                    <input class="form-control" type="text" id="lub_id" name="lub_id" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="lub_id" name="lub_id" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="lub_name">Lubricant Name</label><br>
-                                    <input class="form-control" type="text" id="lub_name" name="lub_name" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="lub_name" name="lub_name" ><br>
 
                                 </div>
 
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="l_liter">Amount(Liters)</label><br>
-                                    <input class="form-control" type="text" id="l_liter" name="l_liter" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="l_liter" name="l_liter" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="l_rs">Amount(RS)</label><br>
-                                    <input class="form-control" type="text" id="l_rs" name="l_rs" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="l_rs" name="l_rs" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="p_method">Paid Method</label><br>
-                                    <input class="form-control" type="text" id="p_method" name="p_method" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="p_method" name="p_method" ><br>
 
                                 </div>
 

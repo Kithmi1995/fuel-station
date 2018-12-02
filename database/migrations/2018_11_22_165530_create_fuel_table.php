@@ -15,10 +15,11 @@ class CreateFuelTable extends Migration
     {
         Schema::create('fuel', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('user_id');
+            $table->string('code');
             $table->string('type');
             $table->double('price',6,2);
             $table->date('price_date');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
         });
     }

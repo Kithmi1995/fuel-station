@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\DepositDebtor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class DepositDebtorController extends Controller
 {
@@ -36,6 +37,21 @@ class DepositDebtorController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validator = Validator::make($request->all(), [
+
+            'date' => 'required|date',
+            'type' => 'required|string|max:255',
+            'price' => 'required',
+            'price_date' => 'required|date'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('lubricant/create')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         $depositDebtor = new DepositDebtor;
         $depositDebtor->user_id = auth()->user()->id;
         $depositDebtor->date = $request->date;

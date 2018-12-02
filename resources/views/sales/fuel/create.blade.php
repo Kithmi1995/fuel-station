@@ -30,7 +30,7 @@
                                 </div>--}}
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="pump_id">Pump</label><br>
                                     <select name="pump_id" id="pump_id" class="mdb-select">
                                         <option value="" disabled selected>Choose your option</option>
@@ -41,7 +41,7 @@
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="pumper_id">Pumper ID</label><br>
                                     <select name="pumper_id" id="pumper_id" class="mdb-select">
                                         <option value="" disabled selected>Choose your option</option>
@@ -52,45 +52,45 @@
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="close">Closing Meter Reading</label><br>
-                                    <input class="form-control" type="text" id="close" name="close" placeholder="Enter Closing Meter Reading.."><br>
+                                    <input class="form-control" type="text" id="close" name="close" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="s_time">Starting Time</label><br>
-                                    <input class="form-control" type="time" id="s_time" name="s_time" placeholder="Enter Starting Time.."><br>
+                                    <input class="form-control" type="time" id="s_time" name="s_time" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="e_time">Ending Time</label><br>
-                                    <input class="form-control" type="time" id="e_time" name="e_time" placeholder="Enter Ending Time.."><br>
+                                    <input class="form-control" type="time" id="e_time" name="e_time" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="s_date">Date</label><br>
-                                    <input class="form-control" type="date" id="s_date" name="s_date" placeholder="Enter Date.."><br>
+                                    <input class="form-control" type="date" id="s_date" name="s_date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="d_sale">Debtor Sales</label><br>
-                                    <input class="form-control" type="text" id="d_sale" name="d_sale" placeholder="EnterDebtor Sales.."><br>
+                                    <input class="form-control" type="text" id="d_sale" name="d_sale" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="c_sale">Credit Card Sales</label><br>
-                                    <input class="form-control" type="text" id="c_sale" name="c_sale" placeholder="Enter Credit Card Sales.."><br>
+                                    <input class="form-control" type="text" id="c_sale" name="c_sale" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="shortage">Shortages</label><br>
-                                    <input class="form-control" type="text" id="shortage" name="shortage" placeholder="Enter Shortages.."><br>
+                                    <input class="form-control" type="text" id="shortage" name="shortage"><br>
 
                                 </div>
 

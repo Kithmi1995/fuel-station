@@ -20,21 +20,21 @@
                                 @csrf
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="date">Date</label><br>
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="Enter Lubricant Type.."><br>
+                                    <input class="form-control" type="date" id="date" name="date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="deb_id">Debtor ID</label><br>
-                                    <input class="form-control" type="text" id="deb_id" name="deb_id" placeholder="Enter Unit Price.."><br>
+                                    <input class="form-control" type="text" id="deb_id" name="deb_id" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="amount">Amount Received</label><br>
-                                    <input class="form-control" type="text" id="amount" name="amount" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="amount" name="amount" ><br>
 
                                 </div>
 

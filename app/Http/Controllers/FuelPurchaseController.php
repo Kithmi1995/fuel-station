@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Fuel;
 use App\FuelPurchase;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FuelPurchaseController extends Controller
 {
@@ -103,5 +105,28 @@ class FuelPurchaseController extends Controller
     {
         $fuelpurchase->delete();
         return redirect()->route('fuelpurchase.index');
+    }
+
+    public function createReport()
+    {
+        return view('purchase.fuel.reports.create');
+    }
+
+    public function getReport(Request $request)
+    {
+        $from = $request->input('date_from');
+        $to = $request->input('date_to');
+//        DB::enableQueryLog();
+        $fuels = Fuel::whereHas('fuel_purchases', function ($query) use ($from, $to){
+            $query->whereBetween('date', [$from, $to]);
+        })->get();
+//        return $fuels;
+//        dd(DB::getQueryLog());
+//        $fuels = Fuel::all();
+//        DB::enableQueryLog();
+//        $fuelpurchase = FuelPurchase::where('date', '>=', $from)->where('date', '<=', $to)->get();
+
+//        dd(DB::getQueryLog());
+        return view('purchase.fuel.reports.show', ['fuels' => $fuels, 'from' => $from, 'to' => $to]);
     }
 }

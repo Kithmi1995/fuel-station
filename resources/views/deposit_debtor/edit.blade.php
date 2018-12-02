@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 
@@ -25,21 +25,21 @@
 
                                 </div>--}}
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="date">Date</label><br>
-                                    <input value="{{ $depositDebtor->date }}" class="form-control" type="date" id="date" name="date" placeholder="Enter Lubricant Type.."><br>
+                                    <input value="{{ $depositDebtor->date }}" class="form-control" type="date" id="date" name="date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="deb_id">Debtor ID</label><br>
-                                    <input value="{{ $depositDebtor->deb_id }}" class="form-control" type="text" id="deb_id" name="deb_id" placeholder="Enter Unit Price.."><br>
+                                    <input value="{{ $depositDebtor->deb_id }}" class="form-control" type="text" id="deb_id" name="deb_id" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="amount">Amount Received</label><br>
-                                    <input value="{{ $depositDebtor->amount }}" class="form-control" type="text" id="amount" name="amount" placeholder="Enter Unit Priced Date.."><br>
+                                    <input value="{{ $depositDebtor->amount }}" class="form-control" type="text" id="amount" name="amount" ><br>
                                 </div>
 
                                 <input type="submit" value="Submit" class="form-control btn btn-primary">

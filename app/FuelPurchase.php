@@ -13,4 +13,11 @@ class FuelPurchase extends Model
     public function user(){
         return $this->belongsTo('App\User');
     }
+
+    public function fuels()
+    {
+        return $this->belongsTo('App\Fuel');
+    }
+
+
 }

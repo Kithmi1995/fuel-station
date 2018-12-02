@@ -13,7 +13,7 @@
                     <div class="col-md-12">
                         <div class="card-header">
                             <h4 class="card-title">
-                                Fuel Register
+                                Lubricant Register
                             </h4>
                         </div>
                         <div class="card-body">
@@ -28,7 +28,7 @@
                                 </div>
                             @endif
 
-                                <form action="{{ route('fuel.store') }}" method="post">
+                                <form action="{{ route('lubricant.store') }}" method="post">
                                     @csrf
                                     {{--<div class="form-group">
                                         <label for="fid">Fuel ID</label><br>
@@ -36,22 +36,23 @@
 
                                     </div>--}}
                                     <div class="md-form">
-                                        <label for="code">Fuel Code</label><br>
+                                        <label for="code">Lubricant Code</label><br>
                                         <input class="form-control" type="text" id="code" name="code" ><br>
 
                                     </div>
 
                                     <div class="md-form">
-                                        <label for="type">Fuel Type</label><br>
+                                        <label for="type">Lubricant Type</label><br>
                                         <input class="form-control" type="text" id="type" name="type" ><br>
 
                                     </div>
+
 
                                     <div class="md-form input-group">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text">Rs.</div>
                                         </div>
-                                        <label for="price" >Unit Price</label><br>
+                                        <label for="price" >Unit Price Date</label><br>
                                         <input class="form-control" placeholder="Unit Price" type="text" id="price" name="price"><br>
 
                                     </div>

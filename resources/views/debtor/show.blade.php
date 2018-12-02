@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
     <div class="container">
@@ -23,15 +23,15 @@
                     <strong> Email:</strong> {{ $debtor->email }}
                 </div>
 
-                <a href="{{ route('debtor.edit', $debtor->id) }}" class="btn btn-primary">edit</a>
+                <a href="{{ route('debtor.index', $debtor->id) }}" class="btn btn-primary">back</a>
 
 
 
-                <form action="{{ route('debtor.destroy', $debtor->id ) }}" method="post">
+               {{-- <form action="{{ route('debtor.destroy', $debtor->id ) }}" method="post">
                     @csrf
                     @method('DELETE')
                     <input type="submit" value="delete" class="btn btn-danger">
-                </form>
+                </form>--}}
 
 
 

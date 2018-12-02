@@ -25,28 +25,28 @@
                                 </div>--}}
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="date">Date</label><br>
-                                    <input  value="{{ $otherpurchase->date }}" class="form-control" type="date" id="date" name="date" placeholder="Enter Unit Price.."><br>
+                                    <input  value="{{ $otherpurchase->date }}" class="form-control" type="date" id="date" name="date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="item">Purchase Item </label><br>
-                                    <input  value="{{ $otherpurchase->item }}" class="form-control" type="text" id="item" name="item" placeholder="Enter Unit Price Date.."><br>
+                                    <input  value="{{ $otherpurchase->item }}" class="form-control" type="text" id="item" name="item" ><br>
 
                                 </div>
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="o_rs">Amount(RS)</label><br>
-                                    <input  value="{{ $otherpurchase->o_rs }}" class="form-control" type="text" id="o_rs" name="o_rs" placeholder="Enter Unit Price Date.."><br>
+                                    <input  value="{{ $otherpurchase->o_rs }}" class="form-control" type="text" id="o_rs" name="o_rs" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="method">Paid Method</label><br>
-                                    <input  value="{{ $otherpurchase->method }}" class="form-control" type="text" id="method" name="method" placeholder="Enter Unit Price Date.."><br>
+                                    <input  value="{{ $otherpurchase->method }}" class="form-control" type="text" id="method" name="method" ><br>
 
                                 </div>
 

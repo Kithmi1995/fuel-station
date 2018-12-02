@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Lubricant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class LubricantController extends Controller
 {
@@ -25,8 +26,12 @@ class LubricantController extends Controller
      */
     public function create()
     {
-        return view('lubricant.create');
-    }
+        if(auth()->user()->role == "deo"){
+            return view('lubricant.create');
+        }
+        else{
+            return "Login as deo to create new lubricant entry";
+        }    }
 
     /**
      * Store a newly created resource in storage.
@@ -36,6 +41,21 @@ class LubricantController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+
+            'code' => 'required|string|max:255',
+            'type' => 'required|string|max:255',
+            'price' => 'required',
+            'price_date' => 'required|date'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('lubricant/create')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+
         $lubricant = new Lubricant;
         $lubricant->user_id = auth()->user()->id;
         $lubricant->type = $request->input('type');

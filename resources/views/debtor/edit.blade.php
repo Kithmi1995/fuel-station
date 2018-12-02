@@ -21,29 +21,32 @@
                                 @method('PUT')
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="d_name">debtor Name/Company Name</label><br>
-                                    <input value="{{ $debtor->d_name }}" class="form-control" type="text" id="d_name" name="d_name" placeholder="Enter debtor Name/Company Name.."><br>
+                                    <input value="{{ $debtor->d_name }}" class="form-control" type="text" id="d_name" name="d_name"><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="address">Address</label><br>
-                                    <input value="{{ $debtor->address }}" class="form-control" type="text" id="address" name="address" placeholder="Enter Address.."><br>
+                                    <input value="{{ $debtor->address }}" class="form-control" type="text" id="address" name="address" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="contact">Contact Number</label><br>
-                                    <input value="{{ $debtor->contact }}" class="form-control" type="text" id="contact" name="contact" placeholder="Enter Unit Priced Date.."><br>
+                                    <input value="{{ $debtor->contact }}" class="form-control" type="text" id="contact" name="contact"><br>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="email">Email</label><br>
-                                    <input value="{{ $debtor->contact }}" class="form-control" type="text" id="email" name="email" placeholder="Enter Email.."><br>
+                                    <input value="{{ $debtor->contact }}" class="form-control" type="text" id="email" name="email"><br>
                                 </div>
 
-                                <input type="submit" value="Submit" class="form-control btn btn-primary">
+
+                                <div class="md-form">
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                                </div>
                             </form>
 
                             <!-- /.panel-body -->

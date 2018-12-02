@@ -21,7 +21,7 @@
 
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="lub_id">Lubricant ID</label><br>
                                     <select name="lub_id" id="lub_id" class="mdb-select">
                                         <option value="" disabled selected>Choose your option</option>
@@ -33,23 +33,23 @@
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="date">Date</label><br>
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="Enter Unit Price.."><br>
+                                    <input class="form-control" type="date" id="date" name="date" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="time">Time</label><br>
-                                    <input class="form-control" type="time" id="time" name="time" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="time" id="time" name="time" ><br>
 
                                 </div>
 
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="noi">Number Of Item</label><br>
-                                    <input class="form-control" type="text" id="noi" name="noi" placeholder="Enter Unit Price Date.."><br>
+                                    <input class="form-control" type="text" id="noi" name="noi" ><br>
 
                                 </div>
 

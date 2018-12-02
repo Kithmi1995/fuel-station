@@ -19,17 +19,17 @@
                     <strong>Bank Name:</strong> {{ $bankDeposit->b_name }}
                 </div>
 
-                <a href="{{ route('bank.edit', $bankDeposit->id) }}" class="btn btn-primary">edit</a>
+                <a href="{{ route('bank.index', $bankDeposit->id) }}" class="btn btn-primary">Back</a>
 
                 {{--<form action="{{ route('fuel.edit', $fuel->id) }}" method="get">--}}
                 {{--<input type="submit" value="edit">--}}
                 {{--</form>--}}
 
-                <form action="{{ route('bank.destroy', $bankDeposit->id ) }}" method="post">
+                {{--<form action="{{ route('bank.destroy', $bankDeposit->id ) }}" method="post">
                     @csrf
                     @method('DELETE')
                     <input type="submit" value="delete" class="btn btn-danger">
-                </form>
+                </form>--}}
 
 
 

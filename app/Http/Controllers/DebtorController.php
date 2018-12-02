@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Debtor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class DebtorController extends Controller
 {
@@ -36,6 +37,21 @@ class DebtorController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validator = Validator::make($request->all(), [
+
+            'd_name' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
+            'contact' => 'required',
+            'email' => 'required|email'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('lubricant/create')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         $debtor = new Debtor;
         $debtor->user_id = auth()->user()->id;
         $debtor->d_name = $request->d_name;

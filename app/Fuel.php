@@ -11,15 +11,7 @@ class Fuel extends Model
 
     protected $table = 'fuel';
 
-    public function isEven(){
-        $result = $this->id % 2 == 0;
-        if($result){
-            return "Yes";
-        }
-        else{
-            return "No, Not even";
-        }
-    }
+
 
     public function getAge()
     {
@@ -35,5 +27,9 @@ class Fuel extends Model
         return $this->hasMany('App\Tank');
     }
 
+    public function fuel_purchases()
+    {
+        return $this->hasMany('App\FuelPurchase');
+    }
 
 }

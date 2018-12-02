@@ -20,13 +20,13 @@
                                 @csrf
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="pump_name">Pump Name</label><br>
-                                    <input class="form-control" type="text" id="pump_name" name="pump_name" placeholder="Enter Pump ID.."><br>
+                                    <input class="form-control" type="text" id="pump_name" name="pump_name"><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="fuel_id">Fuel ID</label><br>
                                     {{--<select name="id" id="id" class="mdb-select md-form">
                                             <option value="" disabled selected>Choose your option</option>
@@ -34,11 +34,11 @@
                                                 <option value="{{ $fuel->id }}">{{ $fuel->id }}</option>
                                             @endforeach
                                     </select>--}}
-                                    <input class="form-control" type="text" id="fuel_id" name="fuel_id" placeholder="Enter Fuel ID.."><br>
+                                    <input class="form-control" type="text" id="fuel_id" name="fuel_id" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="tank_id">Tank ID</label><br>
                                     {{--<select name="id" id="id" class="mdb-select md-form">
                                         <option value="" disabled selected>Choose your option</option>
@@ -46,7 +46,7 @@
                                             <option value="{{ $tank->id }}">{{ $tank->id }}</option>
                                         @endforeach
                                     </select>--}}
-                                    <input class="form-control" type="text" id="tank_id" name="tank_id" placeholder="Enter Tank ID.."><br>
+                                    <input class="form-control" type="text" id="tank_id" name="tank_id" ><br>
 
                                 </div>
 

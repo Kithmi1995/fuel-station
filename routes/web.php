@@ -43,6 +43,12 @@ Route::resource('/bank', 'BankDepositController');
 
 Route::resource('/deposit_debtor', 'DepositDebtorController');
 
+Route::get('/reports/fuelpurchase/create', 'FuelPurchaseController@createReport');
+
+Route::post('/reports/fuelpurchase', 'FuelPurchaseController@getReport');
+
+
+
 
 
 

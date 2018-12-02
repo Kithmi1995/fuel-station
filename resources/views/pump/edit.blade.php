@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 
@@ -25,21 +25,21 @@
 
                                 </div>--}}
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="pump_name">Pump Name</label><br>
-                                    <input value="{{ $pump->pump_name }}" class="form-control" type="text" id="pump_name" name="pump_name" placeholder="Enter Lubricant Type.."><br>
+                                    <input value="{{ $pump->pump_name }}" class="form-control" type="text" id="pump_name" name="pump_name" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="tank_id">Fuel ID</label><br>
-                                    <input value="{{ $pump->fuel_id }}" class="form-control" type="text" id="fuel_id" name="fuel_id" placeholder="Enter Unit Price.."><br>
+                                    <input value="{{ $pump->fuel_id }}" class="form-control" type="text" id="fuel_id" name="fuel_id"><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="tank_id">Tank ID</label><br>
-                                    <input value="{{ $pump->tank_id }}" class="form-control" type="text" id="tank_id" name="tank_id" placeholder="Enter Unit Priced Date.."><br>
+                                    <input value="{{ $pump->tank_id }}" class="form-control" type="text" id="tank_id" name="tank_id"><br>
                                 </div>
 
                                 <input type="submit" value="Submit" class="form-control btn btn-primary">

@@ -20,40 +20,40 @@
                                 @csrf
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="nic">Pumper NIC</label><br>
-                                    <input class="form-control" type="text" id="nic" name="nic" placeholder="Enter Lubricant Type.."><br>
+                                    <input class="form-control" type="text" id="nic" name="nic" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="first">Pumper First Name</label><br>
-                                    <input class="form-control" type="text" id="first" name="first" placeholder="Enter First Name.."><br>
+                                    <input class="form-control" type="text" id="first" name="first" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="last">Pumper Last Name</label><br>
-                                    <input class="form-control" type="text" id="last" name="last" placeholder="Enter Last Name.."><br>
+                                    <input class="form-control" type="text" id="last" name="last" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="address">Pumper Address</label><br>
-                                    <input class="form-control" type="text" id="address" name="address" placeholder="Enter Address .."><br>
+                                    <input class="form-control" type="text" id="address" name="address" ><br>
 
                                 </div>
 
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="contact">Pumper Contact Number</label><br>
-                                    <input class="form-control" type="text" id="contact" name="contact" placeholder="Enter Contact .."><br>
+                                    <input class="form-control" type="text" id="contact" name="contact" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="dob">Date of Birth</label><br>
-                                    <input class="form-control" type="date" id="dob" name="dob" placeholder="Enter Date of Birth .."><br>
+                                    <input class="form-control" type="date" id="dob" name="dob" ><br>
 
                                 </div>
 

@@ -50,6 +50,8 @@ class FuelController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
+
+            'code' => 'required|string|max:255',
             'type' => 'required|string|max:255',
             'price' => 'required',
             'price_date' => 'required|date'
@@ -62,10 +64,12 @@ class FuelController extends Controller
         }
 
         $fuel = new Fuel;
-        $fuel->user_id = auth()->user()->id;
+        $fuel->code = $request->input('code');
         $fuel->type = $request->input('type');
         $fuel->price = $request->price;
         $fuel->price_date = $request->price_date;
+        $fuel->user_id = auth()->user()->id;
+
 
         $fuel->save();
         return redirect()->to('/fuel');
@@ -102,6 +106,7 @@ class FuelController extends Controller
      */
     public function update(Request $request, Fuel $fuel)
     {
+        $fuel->code = $request->input('code');
         $fuel->type = $request->input('type');
         $fuel->price = $request->price;
         $fuel->price_date = $request->price_date;

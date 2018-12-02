@@ -25,21 +25,21 @@
 
                                 </div>--}}
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="tank_name">Tank Name</label><br>
-                                    <input value="{{ $tank->tank_name }}" class="form-control" type="text" id="tank_name" name="tank_name" placeholder="Enter Lubricant Type.."><br>
+                                    <input value="{{ $tank->tank_name }}" class="form-control" type="text" id="tank_name" name="tank_name" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="fuel_id">Fuel ID</label><br>
-                                    <input value="{{ $tank->fuel_id }}"  class="form-control" type="text" id="fuel_id" name="fuel_id" placeholder="Enter Unit Price.."><br>
+                                    <input value="{{ $tank->fuel_id }}"  class="form-control" type="text" id="fuel_id" name="fuel_id" ><br>
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="md-form">
                                     <label for="capacity">Capacity</label><br>
-                                    <input value="{{ $tank->capacity }}"  class="form-control" type="text" id="capacity" name="capacity" placeholder="Enter Unit Price Date.."><br>
+                                    <input value="{{ $tank->capacity }}"  class="form-control" type="text" id="capacity" name="capacity" ><br>
 
                                 </div>
 
