@@ -17,6 +17,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/contact',function(){
+    return view('  contact.index');
+})->name('contact.index');
+
 Route::resource('/fuelpurchase', 'FuelPurchaseController');
 
 Route::resource('/fuel', 'FuelController');

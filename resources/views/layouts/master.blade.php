@@ -55,8 +55,36 @@
 
             <!-- Links -->
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        </div>
+                <!-- Left -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+
+
+                            {{--<a href="{{ route('login') }}" class="nav-link border border-light rounded"
+                               target="_blank">
+                                <i class="fas fa-sign-out-alt"></i>Logout
+                            </a>--}}
+                            <a class="nav-link border border-light rounded" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+
+
+            </div>
 
         </div>
     </nav>
@@ -74,44 +102,12 @@
         @auth
         <div class="list-group list-group-flush">
 
-            <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Submit blog<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="waves-effect">Submit listing</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Registration form</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="waves-effect">For bloggers</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">For authors</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="waves-effect">Introduction</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Monthly meetings</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
         <!-- Sidebar -->
 
                 <a href="#" class="list-group-item active waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Dashboard
                 </a>
-                <a href="#" class="list-group-item list-group-item-action waves-effect">
+                <a href="{{ route('contact.index')}}" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-user mr-3"></i>Contact Details</a>
 
                 <a href="#" class="list-group-item list-group-item-action waves-effect">
@@ -123,21 +119,23 @@
 
                 @if(auth()->user()->role == 'manager')
 
-                    <a href="{{ route("fuel.create")}}" class="list-group-item list-group-item-action waves-effect">
-                        <i class="fa fa-pie-chart mr-3"></i>purchase
-                    </a>
-                    <div class="collapsible-body">
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{{ route('fuelpurchase.create')}}" class="waves-effect">Fuel Purchase</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('lubricantpurchase.create')}}" class="waves-effect">Lubricant Purchase</a>
-                            </li>
-                        </ul>
-                    </div>
+                <a href="{{ route("fuel.create")}}" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>purchase
+                </a>
+                <div class="collapsible-body">
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{ route('fuelpurchase.create')}}" class="waves-effect">Fuel Purchase</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('lubricantpurchase.create')}}" class="waves-effect">Lubricant Purchase</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <a href="{{ route('fuel.create') }}" class="list-group-item list-group-item-action waves-effect">
+
+
+                <a href="{{ route('fuel.create') }}" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Staff Details
                 </a>
 
@@ -152,26 +150,23 @@
 
                 @if(auth()->user()->role == 'deo')
 
-                <a href="{{ route('fuel.create')}}" class="list-group-item list-group-item-action waves-effectt">
-                    <i class="fa fa-pie-chart mr-3"></i>Sales
-                </a>
+                <li class="collapsible collapsible-accordion">
+                </li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pie-chart mr-3"></i> Sales<i class="fas fa-angle-down rotate-icon"></i></a>
                 <ul class="nav nav-second-level">
+
                     <li>
-                        <a href="{{ route('fuelsale.create')}}">Fuel Sales</a>
+                        <a href="{{ route('fuelsale.create')}}" class="waves-effect">Fuel Sales</a>
                     </li>
                     <li>
-                        <a href="{{ route('lubricantsale.create')}}">Lubricant sales</a>
+                        <a href="{{ route('lubricantsale.create')}}" class="waves-effect">Lubricant sales</a>
                     </li>
                 </ul>
 
+                </li>
 
 
-                <a href="{{ route('fuel.create')}}" class="list-group-item list-group-item-action waves-effect">
-                    <i class="fa fa-pie-chart mr-3"></i>Register
-                </a>
-                <ul class="nav nav-second-level">
-
-                <ul class="nav nav-second-level">
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pie-chart mr-3"></i> Register<i class="fas fa-angle-down rotate-icon"></i></a>
+                        <ul class="nav nav-second-level">
                     <li>
                         <a href="{{ route('fuel.create')}}" class="waves-effect">Fuel Register</a>
                     </li>
@@ -190,9 +185,12 @@
                     <li>
                         <a href="{{ route('tank.create')}}" class="waves-effect">Tank Regiser</a>
                     </li>
+                    </ul>
+               
+                    </li>
 
 
-                </ul>
+
                 </ul>
                 @endif
 
@@ -214,12 +212,19 @@
                 <a href="{{ route('fuel.create')}}" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>view Report
                 </a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="{{ route('reports.fuelpurchase.create')}}" class="waves-effect">Fuel Register</a>
+                    </li>
+
+
                 <a href="{{ route('fuel.create')}}" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Staff details
                 </a>
                 <a href="{{ route('fuel.create')}}" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-pie-chart mr-3"></i>Salary Details
                 </a>
+                </ul>
                 @endif
 
         </div>

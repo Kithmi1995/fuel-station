@@ -59,6 +59,7 @@ class DebtorController extends Controller
         $debtor->contact = $request->contact;
         $debtor->email = $request->email;
 
+
         $debtor->save();
         return redirect()->to('/debtor');
 
